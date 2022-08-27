@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.img img{
+ height: 60vh;
+width: 100vw;
+}
+
+.container{
+    display: flex;
+    margin: 20px;
+}
+.box1{
+    width: 40%;
+    margin-right:400px;
+    margin-left: 50px;
+}
+.box2 div{
+    margin: 10px;
+}
+.box2{
+    background-color: rgb(238, 234, 234);
+    padding: 0 20px;
+    border-radius: 15px;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+}
+.smallbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: white;
+    top: 0;
+}

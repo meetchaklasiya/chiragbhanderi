@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estyle.css">
+    <title>Create an Event</title>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <nav class="nav">
+        <a href="Dashboard.html"><i class="fa-solid fa-arrow-left"></i>Back</a>
+        <button class="btn"> <a href="previewpage.html">Preview Page</a></button>
+    </nav>
+    <h1>Create Event</h1>
+<form action="previewpage.html" method="get">
+    <div class="mainbox">
+        <div class="box1">
+            <label for="text">Event Name :</label>
+            <input type="text" id="text" name="text" placeholder="Event Name" required="true">
+            <p>Banner:</p>
+            <input type="file" id="file" name="file" placeholder="Banner">
+            <p>Short Description:</p>
+            <textarea name="des" id="des" cols="30" rows="10" placeholder="Please Describe your Services..." required="true"></textarea>
+
+        </div>
+        <div class="box2">
+            <p>Select Language:</p>
+            <select name="language" id="language">
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+            </select>
+            <p>Event date:</p>
+            <input type="date" id="date" name="date" required="true">
+            <p>Event Time:</p>
+            <input type="time" id="time" name="time" required="true">
+            <p>Link:</p>
+            <input type="text" name="link"  id="link" placeholder="Paste google meet link" required="true">
+            <p>Price:</p>
+            <input type="radio" id="free" name="price"><label for="free">Free</label>
+            <input type="radio" id="paid" name="price"><label for="paid">Paid</label>
+        </div>
+    </div>
+    <input type="submit" id="btn2" onclick="handleSubmit()"/>
+</form>
+    
+    <script
+      src="https://kit.fontawesome.com/6abf38ad41.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+</body>
